@@ -1,6 +1,6 @@
 # Amazon Prep
 
-A static, self-contained prep site built for an Amazon India SDE in-person hiring event (Bangalore / Hyderabad, 13–18 Aug 2026).
+A static, self-contained prep site for Amazon India SDE interviews, built from published interview experiences.
 
 **Live:** https://nandakishore2424.github.io/amazon-prep/
 
@@ -12,7 +12,7 @@ No build step, no dependencies, no tracking. Nine HTML pages, one stylesheet, on
 
 | Page | What it is |
 |---|---|
-| `index.html` | Overview — what an Amazon "in-person hiring event" is, what the corpus shows, a 3-day plan |
+| `index.html` | Overview — what an Amazon "in-person hiring event" is, what the corpus shows, where to start |
 | `experiences.html` | 11 published interview experiences, reproduced in full with timelines, rounds, questions and verdicts |
 | `questions.html` | 86 coding/design questions grouped by the round they were asked in, plus the Leadership Principle bank |
 | `lp.html` | Leadership Principles — all 16 with worked examples, anti-signals and fresher angles, 107 questions, 95 back-to-back drill follow-ups, and a story-matrix tool |
@@ -50,7 +50,7 @@ Content lives in `data/*.js` as plain JS objects — add material there rather t
 
 ## Sources
 
-The interview experiences are summarised from these published accounts, each linked in-page. Content was collected on **10 August 2026** and reflects those pages as of that date. Credit for the raw experiences belongs to the candidates who wrote them up.
+The interview experiences are summarised from these published accounts, each linked in-page. Treat them as a snapshot — interview processes change, so check the source links for anything newer. Credit for the raw experiences belongs to the candidates who wrote them up.
 
 - [Amazon SDE-1 India Interview Experience (2026)](https://interviewexperiences.in/experience/amazon/amazon-sde-1-interview-experience-india-2026)
 - [Amazon SDE-2 Interview Experience, 2026](https://codeprismo.medium.com/amazon-interview-experience-sde-2-2026-c2cd6e71c035) — Medium

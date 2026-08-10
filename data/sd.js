@@ -6,7 +6,7 @@ const SD_GUIDE = {
 
 /* ============================================================ CALIBRATION */
 calibration: {
-  intro: "Before you study anything here, know how much of it applies to you. Design is weighted very differently by level, and preparing for the wrong one wastes the three days you have.",
+  intro: "Before you study anything here, know how much of it applies to you. Design is weighted very differently by level, and preparing for the wrong one is wasted effort.",
   levels: [
     { lvl: "SDE-1 (L4)", verdict: "No dedicated design round — but design questions appear INSIDE coding rounds.",
       d: "In the collected experiences, no SDE-1 loop had a standalone system design round. What they did have: a 20-25 minute 'design a data structure that supports X' question inside a technical round, a 'design a cache with get and set' in a Bar Raiser, and one round where 40 of 60 minutes went into the candidate's own project — architecture, storage choices, edge cases, failure scenarios and scaling. That last one is a design interview wearing a different name.",

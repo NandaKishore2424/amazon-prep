@@ -35,7 +35,7 @@ const DSA_TOPICS = [
       { q: "Maximum Units on a Truck", slug: "maximum-units-on-a-truck", d: "E", tag: "Greedy", corpus: 1 },
       { q: "Remove Duplicates from Sorted Array", slug: "remove-duplicates-from-sorted-array", d: "E", tag: "Two pointers" }
     ]},
-    { name: "Core — most asked", note: "If you only have three days, this is the list.", items: [
+    { name: "Core — most asked", note: "If you only have time for one tier, this is the one.", items: [
       { q: "Maximum Subarray", slug: "maximum-subarray", d: "M", tag: "Kadane" },
       { q: "Product of Array Except Self", slug: "product-of-array-except-self", d: "M", tag: "Prefix/suffix" },
       { q: "3Sum", slug: "3sum", d: "M", tag: "Sort + two pointers" },

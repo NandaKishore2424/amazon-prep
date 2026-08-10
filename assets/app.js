@@ -1,20 +1,5 @@
 /* Amazon Prep — shared page logic */
 
-/* ---------- countdown to the hiring-event window ---------- */
-(function countdown() {
-  const el = document.querySelector("[data-countdown]");
-  if (!el) return;
-  const start = new Date(2026, 7, 13); // 13 Aug 2026
-  const end = new Date(2026, 7, 18, 23, 59);
-  const now = new Date();
-  const day = 24 * 60 * 60 * 1000;
-  if (now > end) { el.textContent = "hiring event window has passed"; return; }
-  const days = Math.ceil((start - now) / day);
-  el.textContent = days > 0
-    ? days + (days === 1 ? " day" : " days") + " to the 13–18 Aug window"
-    : "hiring event window is live (13–18 Aug)";
-})();
-
 /* ---------- mark active nav link ---------- */
 (function navActive() {
   const here = location.pathname.split("/").pop() || "index.html";
@@ -29,8 +14,8 @@ const practiceUrl = r => r.slug
   ? "https://leetcode.com/problems/" + r.slug + "/"
   : "https://duckduckgo.com/?q=" + encodeURIComponent(r.search || r.q);
 
-/* Verified against leetcode.com/api/problems/all on 10 Aug 2026:
-   all slugs on this site resolve; these six sit behind LeetCode Premium. */
+/* Verified against leetcode.com/api/problems/all — every slug on this site
+   resolves; these six sit behind LeetCode Premium. */
 const LC_PREMIUM = new Set([
   "logger-rate-limiter", "design-hit-counter", "meeting-rooms-ii",
   "alien-dictionary", "design-in-memory-file-system", "design-search-autocomplete-system"

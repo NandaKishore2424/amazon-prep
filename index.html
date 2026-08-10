@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Amazon Prep — 13–18 Aug hiring event</title>
+<title>Amazon Prep — SDE interview preparation</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -21,15 +21,13 @@
     <a href="cn.html">CN</a>
     <a href="dbms.html">DBMS</a>
   </span>
-  <span class="spacer"></span>
-  <span class="countdown" data-countdown>—</span>
 </nav>
 
 <main class="wrap">
 
   <div class="page-head">
-    <h1>Amazon in-person hiring event — Bangalore / Hyderabad</h1>
-    <p>Prep pack built on 10 Aug 2026. Two pages of evidence — what candidates actually reported — and four pages of syllabus, taking each subject from scratch up to the level Amazon asks at. Progress on every page is saved in your browser.</p>
+    <h1>Amazon SDE interview preparation</h1>
+    <p>Two pages of evidence — what candidates actually reported in published interview write-ups — and five pages of syllabus, taking each subject from scratch up to the level Amazon asks at. Progress on every page is saved in your browser.</p>
   </div>
 
   <h2 style="font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-faint);margin:0 0 12px">Evidence — what was actually asked</h2>
@@ -81,13 +79,13 @@
   </div>
 
   <div class="card">
-    <h2 style="font-size:19px">What the 8/13–8/18 question on the form means</h2>
-    <p>It is asking whether you can physically attend an <b>in-person hiring event</b> — a bulk interview drive where Amazon books office space and runs many candidates' full loops over a few days.</p>
+    <h2 style="font-size:19px">What an in-person hiring event is</h2>
+    <p>Amazon India runs periodic <b>in-person hiring events</b> — bulk interview drives where they book office space and run many candidates' full loops over a few days, usually at Bangalore or Hyderabad. If you are invited to one, the interest form asks two separate location questions that are easy to confuse:</p>
     <dl class="kv" style="margin:16px 0">
       <dt>Preferred Location 1 / 2</dt><dd>Where the <b>job</b> would be. Team location.</dd>
-      <dt>In-person event question</dt><dd>Where the <b>interview</b> happens. Not the same thing — you can prefer Chennai for the role and still interview in Bangalore.</dd>
-      <dt>"Yes, Hyderabad / Yes, Bangalore"</dt><dd>Which venue you would travel to. They are running the event at both sites.</dd>
-      <dt>"Tentatively"</dt><dd>13–18 Aug is the window, not your date. You get one specific day and slot inside it, confirmed later.</dd>
+      <dt>The in-person event question</dt><dd>Where the <b>interview</b> happens. Not the same thing — you can prefer Chennai for the role and still interview in Bangalore.</dd>
+      <dt>The venue choice</dt><dd>Which city you would travel to for the interview itself. They typically run the event at more than one site.</dd>
+      <dt>A "tentative" window</dt><dd>The stated range is the window, not your date. You get one specific day and slot inside it, confirmed later.</dd>
     </dl>
     <h4 style="color:var(--accent);font-size:14px;margin-bottom:8px">Four things worth knowing</h4>
     <ul>
@@ -96,7 +94,7 @@
       <li><b>Ask the recruiter about travel and accommodation</b> before booking anything. It is usually covered for out-of-station candidates at these drives, but confirm in writing.</li>
       <li><b>In-person often means whiteboard or paper</b>, not an IDE. At least one experience in the corpus explicitly warns about this. Hand-write a few solutions before you go.</li>
     </ul>
-    <p style="margin-top:14px">Reply to the recruiter asking for: the exact date once locked, the number and type of rounds, and the travel policy.</p>
+    <p style="margin-top:14px">Worth asking the recruiter for: the exact date once locked, the number and type of rounds, and the travel policy.</p>
   </div>
 
   <div class="card">
@@ -112,20 +110,20 @@
   </div>
 
   <div class="card">
-    <h2 style="font-size:19px">Suggested 3-day plan</h2>
-    <p style="color:var(--text-dim);font-size:13.5px;margin-top:0">The syllabus pages are built to be worked through over weeks. With three days, do not try to cover them — use the filters to hit only what the corpus shows gets asked.</p>
-    <dl class="kv">
-      <dt>Today (10 Aug)</dt><dd>Read the <a href="lp.html">LP round page</a> end to end, then use its story matrix to write 8–10 STAR stories mapped across the 16 principles. Highest-return work available to you — it is where people actually get cut, and it is the only part you cannot cram on the morning of.</dd>
-      <dt>11 Aug</dt><dd><a href="dsa.html">DSA sheet</a> filtered to <b>★ asked</b>. Then the Core tier of Arrays, Hashing and Binary Search. Run the DP ladder on House Robber out loud, on paper.</dd>
-      <dt>12 Aug</dt><dd>Trees, Tree DP and Graphs from the DSA sheet. Then rehearse your main project as a 10-minute deep-dive using the <a href="sd.html">45-minute design framework</a>: architecture, storage, edge cases, what broke, what you would change. In the corpus one interviewer spent 40 of 60 minutes on exactly this.</dd>
-      <dt>Any spare hour</dt><dd>The <b>core</b>-filtered modules only: <a href="os.html">OS</a> modules 4 and 5 (concurrency, memory), <a href="dbms.html">DBMS</a> modules 4 and 5 (indexing, transactions). Those four are what the corpus shows being asked live.</dd>
-      <dt>Night before</dt><dd>Re-read your STAR stories, not more LeetCode. Sleep.</dd>
-    </dl>
+    <h2 style="font-size:19px">Where to start</h2>
+    <p style="color:var(--text-dim);font-size:13.5px;margin-top:0">In priority order. The syllabus pages are built to be worked through properly; when time is short, use the filters on each to hit only what the corpus shows actually gets asked.</p>
+    <ol style="margin-bottom:0">
+      <li><b><a href="lp.html">Leadership Principles</a>, end to end.</b> Then use the story matrix to write 8–10 STAR stories covering all 16. This is where people actually get cut, and it is the only part you cannot cram at the last minute.</li>
+      <li><b><a href="dsa.html">DSA sheet</a> filtered to ★ asked</b>, then the Core tier of Arrays, Hashing, Binary Search, Trees and DP. Run the DP ladder on House Robber out loud, on paper.</li>
+      <li><b>Rehearse your own project as a design walkthrough</b> using the <a href="sd.html">45-minute framework</a> — architecture, storage, edge cases, what broke, what you would change. In the corpus one interviewer spent 40 of 60 minutes on exactly this.</li>
+      <li><b>Fundamentals, core-filtered only:</b> <a href="os.html">OS</a> modules 4 and 5 (concurrency, memory) and <a href="dbms.html">DBMS</a> modules 4 and 5 (indexing, transactions). Those four are what the corpus shows being asked live.</li>
+      <li><b>The night before:</b> re-read your STAR stories, not more LeetCode. Sleep.</li>
+    </ol>
   </div>
 
   <div class="card">
     <h2 style="font-size:19px">Sources</h2>
-    <p style="color:var(--text-dim);font-size:13.5px">Every claim on these pages traces to one of these. Content was collected on 10 Aug 2026 and reflects those pages as of that date.</p>
+    <p style="color:var(--text-dim);font-size:13.5px">Every claim on these pages traces to one of these. Interview content changes over time — treat these as a snapshot and check the source links for anything newer.</p>
     <ul style="font-size:14px">
       <li><a href="https://interviewexperiences.in/experience/amazon/amazon-sde-1-interview-experience-india-2026" target="_blank" rel="noopener">Amazon SDE-1 India Interview Experience (2026)</a></li>
       <li><a href="https://codeprismo.medium.com/amazon-interview-experience-sde-2-2026-c2cd6e71c035" target="_blank" rel="noopener">Amazon SDE-2 Interview Experience, 2026 — Medium</a></li>

@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------
    Amazon Prep — interview experience corpus
    Each entry mirrors the content of the linked source page.
-   Collected 10 Aug 2026 for the 13–18 Aug in-person hiring event.
+   Summarised from published write-ups; every entry links to its source.
 ------------------------------------------------------------------- */
 
 const EXPERIENCES = [
@@ -17,7 +17,7 @@ const EXPERIENCES = [
   era: "2026",
   tags: ["OA", "3 onsite rounds", "Tree DP", "Project deep-dive", "LP"],
   source: { name: "interviewexperiences.in", url: "https://interviewexperiences.in/experience/amazon/amazon-sde-1-interview-experience-india-2026" },
-  why: "Closest match to your situation: 2026, India, SDE-1, OA then three back-to-back onsite rounds.",
+  why: "The most recent and most directly relevant account here: India, SDE-1, OA then three back-to-back onsite rounds.",
   html: `
 <h4>Background</h4>
 <p>YOE / college not stated. Two things the candidate flags about themselves: they had <b>taken the OA multiple times before</b> (repeat attempts are normal and not disqualifying), and they had a side project with <b>real users and decent scale</b> — which ended up eating 40 minutes of one round.</p>
@@ -268,7 +268,7 @@ const EXPERIENCES = [
 
 <h4>Key tip</h4>
 <blockquote>At every stage you are expected to write clean, simple and efficient code with minimal possible time complexity <b>on paper or whiteboard</b>.</blockquote>
-<p>Worth internalising for 13–18 Aug: in-person rounds are frequently whiteboard or paper, not an IDE. Practise writing at least a few solutions by hand.</p>
+<p>Worth internalising: in-person rounds are frequently whiteboard or paper, not an IDE. Practise writing at least a few solutions by hand.</p>
 `
 },
 
