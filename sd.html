@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>System Design & LLD — Amazon Prep</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <span class="brand"><span class="dot"></span> Amazon Prep</span>
+  <span class="navlinks">
+    <a href="index.html">Overview</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="questions.html">Question bank</a>
+    <a href="lp.html">LP round</a>
+    <a href="dsa.html">DSA sheet</a>
+    <a href="sd.html">System design</a>
+    <a href="os.html">OS</a>
+    <a href="cn.html">CN</a>
+    <a href="dbms.html">DBMS</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="countdown" data-countdown>—</span>
+</nav>
+
+<main class="wrap wrap-wide">
+
+  <div class="page-head">
+    <h1>System design &amp; low-level design</h1>
+    <p>Nine worked designs, five of them taken directly from the interview experiences on this site. Each has requirements, a walkthrough, a code or schema sketch, the deep-dive follow-ups <em>with answers</em>, and a drilling chain showing where candidates break. Before that: how much of this actually applies at your level, the 45-minute framework, the numbers, the building blocks and LLD.</p>
+  </div>
+
+  <div class="card" style="border-left:3px solid var(--accent)">
+    <h2 style="font-size:17px;margin-top:0">Read this first if you are SDE-1</h2>
+    <p>No SDE-1 loop in the corpus had a standalone system design round. Design still appeared — but <b>inside coding rounds</b>, in three forms:</p>
+    <ul>
+      <li>A <b>20–25 minute "design a data structure that supports X"</b> question in the middle of a technical round — the post-office hierarchy problem, which is the first worked design below.</li>
+      <li><b>"Implement a cache with get() and set()"</b> in a Bar Raiser round.</li>
+      <li>A round where the interviewer announced two DSA questions and then spent <b>40 of 60 minutes on the candidate's own project</b> — architecture, data storage choices, verification logic, edge cases, scalability, failure scenarios. That is a design interview under a different name, and it is the one you are most likely to face.</li>
+    </ul>
+    <p style="margin-bottom:0">So: do the two SDE-1 designs, read the framework and the LLD section, and then <b>rehearse your own project as a design walkthrough</b> using the 45-minute structure. The large HLD designs are worth reading if you have time, and are what you would face at SDE-2.</p>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="sd-search" placeholder="Search this page — try 'idempotency', 'hot partition', 'consistent hashing', 'strategy'…">
+    <select id="sd-level">
+      <option value="all">All designs</option>
+      <option value="SDE-1">SDE-1 level only</option>
+      <option value="SDE-2">SDE-2 level only</option>
+    </select>
+    <button class="btn" id="sd-corpus">★ Asked in the corpus only</button>
+    <span class="spacer" style="flex:1"></span>
+    <span style="font-size:13px;color:var(--text-dim)">9 designs · 46 deep-dives · 46 drill follow-ups</span>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar" id="sd-nav"></aside>
+    <div id="sd-root"></div>
+  </div>
+
+</main>
+
+<script src="data/sd.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

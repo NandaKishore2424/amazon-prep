@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leadership Principles — Amazon Prep</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <span class="brand"><span class="dot"></span> Amazon Prep</span>
+  <span class="navlinks">
+    <a href="index.html">Overview</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="questions.html">Question bank</a>
+    <a href="lp.html">LP round</a>
+    <a href="dsa.html">DSA sheet</a>
+    <a href="sd.html">System design</a>
+    <a href="os.html">OS</a>
+    <a href="cn.html">CN</a>
+    <a href="dbms.html">DBMS</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="countdown" data-countdown>—</span>
+</nav>
+
+<main class="wrap wrap-wide">
+
+  <div class="page-head">
+    <h1>Leadership Principles — the whole round</h1>
+    <p>Not a question list. This is how the round is run, how STAR is actually scored, all 16 principles with worked examples and the anti-signals for each, and the back-to-back drilling chains that show exactly where a thin story falls apart. Read it end to end once, then use the story matrix to find your gaps.</p>
+  </div>
+
+  <div class="card" style="border-left:3px solid var(--red)">
+    <h2 style="font-size:17px;margin-top:0">Why this page is longer than the DSA one</h2>
+    <p>In the interview experiences collected on this site, the Leadership Principles are what decided outcomes — not the code.</p>
+    <ul style="margin-bottom:0">
+      <li>An <b>SDE-II in Bangalore was rejected</b> after clean technical performance in every round. HR cited an average rating on <b>Customer Obsession</b> as the deciding factor. Nothing technical went wrong.</li>
+      <li>The <b>Feb 2026 SDE-1 who was selected</b> called the LP round the toughest of the day — roughly 40 minutes of a poker-faced interviewer going deep into each situation, asking multiple follow-ups and challenging decisions from different angles.</li>
+      <li>The <b>L5 who got an offer</b> in Bangalore spent 45 minutes on LP with the hiring manager and 50 more with the Bar Raiser. Two of four rounds were almost entirely behavioural.</li>
+      <li>Meanwhile candidates who passed <b>8 of 13 test cases</b>, or never reached the optimal DP solution, were still selected.</li>
+    </ul>
+    <p style="margin-bottom:0"><b>The asymmetry is the point.</b> Imperfect code with sound reasoning survives. An average LP rating does not.</p>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="lp-search" placeholder="Search this page — try 'reversible', 'blame', 'metric', 'fresher'…">
+    <button class="btn" id="lp-reset">Clear my saved stories</button>
+    <span class="spacer" style="flex:1"></span>
+    <span style="font-size:13px;color:var(--text-dim)">16 principles · 107 questions · 95 follow-up drills</span>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar" id="lp-nav"></aside>
+    <div id="lp-root"></div>
+  </div>
+
+</main>
+
+<script src="data/lp.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

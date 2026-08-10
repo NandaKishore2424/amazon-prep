@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer Networks — Amazon Prep</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <span class="brand"><span class="dot"></span> Amazon Prep</span>
+  <span class="navlinks">
+    <a href="index.html">Overview</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="questions.html">Question bank</a>
+    <a href="lp.html">LP round</a>
+    <a href="dsa.html">DSA sheet</a>
+    <a href="sd.html">System design</a>
+    <a href="os.html">OS</a>
+    <a href="cn.html">CN</a>
+    <a href="dbms.html">DBMS</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="countdown" data-countdown>—</span>
+</nav>
+
+<main class="wrap wrap-wide">
+
+  <div class="page-head">
+    <h1 id="syl-title">—</h1>
+    <p id="syl-tagline" style="color:var(--accent);font-size:15px;margin-bottom:10px"></p>
+    <p id="syl-intro"></p>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="syl-search" placeholder="Search topics and subtopics — try 'TCP', 'DNS', 'load balancer'…">
+    <select id="syl-level">
+      <option value="all">All modules</option>
+      <option value="foundation">Foundation only</option>
+      <option value="core">Core only</option>
+      <option value="supporting">Supporting only</option>
+      <option value="advanced">Advanced only</option>
+    </select>
+    <button class="btn" id="syl-reset">Reset progress</button>
+    <span class="spacer" style="flex:1"></span>
+    <span class="progress-wrap">
+      <span id="syl-progress-label">0 / 0 covered</span>
+      <span class="bar" id="syl-progress-bar"><i></i></span>
+    </span>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar" id="syl-nav"></aside>
+    <div id="syl-root"></div>
+  </div>
+
+</main>
+
+<script src="data/cn.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

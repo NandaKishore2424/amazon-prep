@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interview experiences — Amazon Prep</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <span class="brand"><span class="dot"></span> Amazon Prep</span>
+  <span class="navlinks">
+    <a href="index.html">Overview</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="questions.html">Question bank</a>
+    <a href="lp.html">LP round</a>
+    <a href="dsa.html">DSA sheet</a>
+    <a href="sd.html">System design</a>
+    <a href="os.html">OS</a>
+    <a href="cn.html">CN</a>
+    <a href="dbms.html">DBMS</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="countdown" data-countdown>—</span>
+</nav>
+
+<main class="wrap wrap-wide">
+
+  <div class="page-head">
+    <h1>Interview experiences</h1>
+    <p>Eleven published accounts, reproduced in full — timeline, every round, every question, the candidate's own commentary and the verdict. Each card links back to its source. Ordered roughly by how closely it matches an SDE-1 India in-person loop.</p>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="exp-search" placeholder="Search inside every experience — try 'bar raiser', 'DP', 'whiteboard', 'ownership'…">
+    <select id="exp-level">
+      <option value="all">All levels</option>
+      <option value="SDE-1">SDE-1</option>
+      <option value="SDE-2">SDE-2</option>
+      <option value="Intern">Intern</option>
+    </select>
+    <button class="btn" id="exp-2026">Recent only (2025–26)</button>
+    <span class="spacer" style="flex:1"></span>
+    <span id="exp-count" style="font-size:13px;color:var(--text-dim)"></span>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar" id="exp-nav"></aside>
+    <div id="exp-root"></div>
+  </div>
+
+</main>
+
+<script src="data/experiences.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

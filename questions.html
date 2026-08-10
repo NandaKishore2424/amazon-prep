@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round-wise question bank — Amazon Prep</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <span class="brand"><span class="dot"></span> Amazon Prep</span>
+  <span class="navlinks">
+    <a href="index.html">Overview</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="questions.html">Question bank</a>
+    <a href="lp.html">LP round</a>
+    <a href="dsa.html">DSA sheet</a>
+    <a href="sd.html">System design</a>
+    <a href="os.html">OS</a>
+    <a href="cn.html">CN</a>
+    <a href="dbms.html">DBMS</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="countdown" data-countdown>—</span>
+</nav>
+
+<main class="wrap wrap-wide">
+
+  <div class="page-head">
+    <h1>Round-wise question bank</h1>
+    <p>Every question pulled out of the experiences on the previous page, grouped by the round it was asked in. "Reported in" links to the account it came from; "Practise" goes to LeetCode where the problem has a canonical page, otherwise to a search. Tick boxes are saved in this browser.</p>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="q-search" placeholder="Search questions, topics, notes — try 'tree', 'binary search', 'bar raiser'…">
+    <select id="q-diff">
+      <option value="all">All levels</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+    <button class="btn" id="q-hide-done">Hide done</button>
+    <button class="btn" id="q-reset">Reset progress</button>
+    <span class="spacer" style="flex:1"></span>
+    <span class="progress-wrap">
+      <span id="q-progress-label">0 / 0 done</span>
+      <span class="bar" id="q-progress-bar"><i></i></span>
+    </span>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar" id="q-nav"></aside>
+    <div id="q-root"></div>
+  </div>
+
+</main>
+
+<script src="data/questions.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

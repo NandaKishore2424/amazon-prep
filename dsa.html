@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSA sheet — Amazon Prep</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <span class="brand"><span class="dot"></span> Amazon Prep</span>
+  <span class="navlinks">
+    <a href="index.html">Overview</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="questions.html">Question bank</a>
+    <a href="lp.html">LP round</a>
+    <a href="dsa.html">DSA sheet</a>
+    <a href="sd.html">System design</a>
+    <a href="os.html">OS</a>
+    <a href="cn.html">CN</a>
+    <a href="dbms.html">DBMS</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="countdown" data-countdown>—</span>
+</nav>
+
+<main class="wrap wrap-wide">
+
+  <div class="page-head">
+    <h1>DSA practice sheet</h1>
+    <p>Topic by topic, in the order to learn them. Each topic opens with what to <b>understand</b> before you start solving — the concepts and patterns — then a tiered problem list. Problems marked <span class="pill orange">★ asked</span> appear in the interview experiences collected on this site, so they carry more weight than the rest.</p>
+  </div>
+
+  <div class="card" style="border-left:3px solid var(--accent)">
+    <h2 style="font-size:17px;margin-top:0">How to use this with three days left</h2>
+    <ul style="margin-bottom:0">
+      <li><b>Filter to ★ asked first.</b> That is <span id="dsa-corpus-count">—</span> problems that real candidates were really given. Do those before anything else.</li>
+      <li><b>Then the Core tier</b> of Arrays, Hashing, Binary Search, Trees and DP. Skip Warm-up if a topic is already comfortable.</li>
+      <li><b>For DP, do the ladder, not the volume.</b> Take House Robber and Coin Change and write all four versions — recursion, memo, tabulation, space-optimised. One problem done four ways beats four problems done once, because that is literally what the Feb 2026 interviewer walked the candidate through.</li>
+      <li><b>Write at least five solutions by hand on paper.</b> In-person rounds are frequently whiteboard, and one corpus experience says so explicitly.</li>
+      <li>Say the time and space complexity out loud every single time. Every experience that lists tips mentions it.</li>
+    </ul>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="dsa-search" placeholder="Search problems, patterns, notes — try 'monotonic', 'tree dp', 'window'…">
+    <select id="dsa-diff">
+      <option value="all">All levels</option>
+      <option value="E">Easy</option>
+      <option value="M">Medium</option>
+      <option value="H">Hard</option>
+    </select>
+    <button class="btn" id="dsa-corpus">★ Asked in the corpus only</button>
+    <button class="btn" id="dsa-hide">Hide solved</button>
+    <button class="btn" id="dsa-reset">Reset</button>
+    <span class="spacer" style="flex:1"></span>
+    <span class="progress-wrap">
+      <span id="dsa-progress-label">0 / 0 solved</span>
+      <span class="bar" id="dsa-progress-bar"><i></i></span>
+    </span>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar" id="dsa-nav"></aside>
+    <div id="dsa-root"></div>
+  </div>
+
+</main>
+
+<script src="data/dsa.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
